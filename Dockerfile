@@ -1,6 +1,6 @@
 FROM golang:latest as builder
 WORKDIR /app
-COPY ..
+COPY . .
 RUN GOOS=linux CGO_ENABLED=0 go build -ldflags="-w -s" -o server main.go 
 
 FROM scratch
