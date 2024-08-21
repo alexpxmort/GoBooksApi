@@ -38,6 +38,9 @@ coverage.out
 *.test
 *.out
 
+# Configuration files
+*.env
+
 
 # Temporary files
 *.tmp
