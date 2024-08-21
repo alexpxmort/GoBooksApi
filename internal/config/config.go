@@ -16,10 +16,20 @@ func InitDB() {
 
 	var err error
 
-	err = godotenv.Load(".env")
-	if err != nil {
-		fmt.Println(err)
-		log.Fatal("Error loading .env file")
+	envMode := os.Getenv("ENV")
+
+	if envMode == "" {
+		envMode = "production"
+	}
+
+	fmt.Printf("Running in %s mode\n", envMode)
+
+	if envMode != "production" {
+		err = godotenv.Load()
+		if err != nil {
+			fmt.Println(err)
+			log.Fatal("Error loading .env file")
+		}
 	}
 
 	userDb := os.Getenv("DB_USER")
