@@ -1,0 +1,48 @@
+# Go binary files
+/bin/
+/build/
+/*.exe
+/*.out
+/*.test
+
+# Dependency directories (remove the comment to include in the ignore list)
+# If you are using modules, you can skip this section
+/vendor/
+
+# Go workspace files
+/go.work
+/go.work.sum
+
+# IDEs and editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Coverage reports
+coverage.out
+
+# Build output
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+
+# Package manager
+go.sum
