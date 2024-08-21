@@ -47,5 +47,3 @@ coverage.out
 *.bak
 *.swp
 
-# Package manager
-go.sum
